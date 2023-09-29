@@ -170,12 +170,10 @@ require('lazy').setup({
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
-    config = function()
-      require('ibl').setup {
-        char = '┊',
-        show_trailing_blankline_indent = false,
-      }
-    end,
+    opts = {
+      char = '┊',
+      show_trailing_blankline_indent = false,
+    },
   },
 
   -- "gc" to comment visual regions/lines
